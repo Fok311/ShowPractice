@@ -4,6 +4,8 @@ const mongoose = require("mongoose");
 // create the express app
 const app = express();
 
+app.use(express.json())
+
 // connect to MongoDB
 mongoose
   .connect("mongodb://127.0.0.1:27017/netflix")
